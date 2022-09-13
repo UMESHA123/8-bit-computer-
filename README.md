@@ -228,5 +228,131 @@ Program counter
 ![Screenshot from 2022-09-13 15-30-55](https://user-images.githubusercontent.com/73009807/189873053-013f1bfe-3186-484c-a070-f88d639cd671.png)
 
 
+Project Setup
+
 
 ![Screenshot from 2022-09-13 15-34-13](https://user-images.githubusercontent.com/73009807/189873738-9974997d-efc6-4830-9c4d-ab83a8763f47.png)
+
+
+The 8 bit computer does basic arithmetic functions like addition,
+subtraction.
+
+
+![ADD_BB](https://user-images.githubusercontent.com/73009807/189874193-211f94e2-f6fe-486b-838b-e1a177bcfd20.PNG)
+
+Addition:
+
+            MOV R0,@14
+            ADD R0,@15
+            OUT
+
+![ADDTION BLOCK](https://user-images.githubusercontent.com/73009807/189874352-471df819-1e98-4987-a12a-c0185f1c6913.png)
+
+Subtraction:
+
+            MOV R0,@14
+            SUB R0,@15
+            OUT
+
+Finding the Fibonacci Sequence
+
+            a series of numbers in which each number (Fibonacci number) is
+            the sum of the two preceding numbers. The simplest is the series
+            0,1,1,2,3,5,8,11…….
+
+            
+            MOV R0,@13 // X INPUT
+            MOV R1,@14 // Y INPUT
+     LOOP   OUT
+            ADD R0,R1 // X = X +Y
+            MOV @15,R0 // Z = X
+            MOV @13,R1 // X = Y
+            MOV R1,@15 // Y = Z
+            JC LOOP
+            END
+            
+![Screenshot from 2022-09-13 15-40-50](https://user-images.githubusercontent.com/73009807/189875082-01d9ddb4-55da-4b85-afc6-090c8e044d25.png)
+
+
+Interface Seven segment display and buzzer.
+
+![IMG_20220717_162918](https://user-images.githubusercontent.com/73009807/189875194-036f8af2-65c2-4110-8908-225fb8c5cef6.jpg)
+
+            The number 8 is displayed when the power is given to all the
+            segments and if you disconnect the power for ‘g’, then it displays
+            number 0. In seven segment display, power (or voltage) at different pins
+            can be applied at the same time, so we can form combinations of display
+            numerical from 0 to 9. Since seven segment display can not form
+            alphabet like X and Z, so it can not be used for alphabet and it can be
+            used only for displaying decimal numerical magnitudes. However, seven
+            segment displays can form alphabets A, B, C, D, E, and F, so it can also
+            used for representing hexadecimal digits.
+            
+![Seven-Segment-Display-Truth-Table](https://user-images.githubusercontent.com/73009807/189875339-bb3b33b2-9bcb-4158-8cc7-dbed36a354f9.png)
+
+            MOV @0000 , 0111111B
+            MOV @0001 , 0000110B
+            MOV @0010 , 1011011B
+            MOV @0011 , 1001111B
+            MOV @0100 , 1100110B
+            MOV @0101 , 1101101B
+            MOV @0110 , 1111101B
+            MOV @0111 , 0000111B
+            MOV @1000 , 1111111B
+            MOV @1001 , 1100111B
+            MOV R0 , 0000B
+       LOOP
+            OUT @R0
+            INC R0,#1
+            JC LOOP
+
+
+CONCLUSION
+
+            An student has suffered to study COA with the theory that
+            explained in several lessons, the lesson explained a structure and an
+            architecture computer only. There are not providing a simulation that
+            explained step by step computer architecture
+            The 8 bit computer does all basic arithmetic functions like addition,
+            subtraction, etc., but doesn’t do all the arithmetic functions. This computer
+            can be made Turing complete. If the computer supports and runs all the
+            Turing functions we can say that the 8 bit computer is Turing complete.
+            This can be done by simple enhancements in the computer. This
+            will make the computer do a whole lot of new functions and the
+            possibilities will be greater than the previous generation. This makes it
+            easy to use for creating temporary prototypes and experimenting with
+            circuit design. For this reason, solderless breadboards and other
+            components can be diminished into a suitable and user friendly
+            environment.
+
+FUTURE SCOPE
+
+            The microprocessors are considered to be one of the most
+            enhanced product of this product and thus made to be used in an user
+            friendly and accessible environment. The modularity of the design makes
+            it easier to test each module by itself so we won’t ever get to a point where
+            we put it all together and nothing works.
+            The output register is similar to any other register (like the A and B
+            registers) except rather than displaying its contents in binary on 8 LEDs, it
+            displays its contents in decimal The modularity of the design makes it
+            easier to test each module by itself so we won’t ever get to a point where
+            we put it all together and nothing works. The output register is similar to
+            any other register (like the A and B registers) except rather than displaying
+            its contents in binary on 8 LEDs, it displays its contents in decimal.
+
+
+REFERENCES
+
+https://eater.net/8bit/
+
+http://www.instructables.com/id/How-to-Build-an-8-Bit-Computer/
+
+https://electronicsforu.com/electronics-projects/simple-8-bit-computer-
+learning
+
+https://www.extremetech.com/computing/128035-how-to-build-an-8-
+bit-computerfrom-scratch
+
+digital-computer-electronics-3rd-edition-malvino
+
+http://www.instructables.com/id/How-to-Build-an-8-Bit-Computer
