@@ -126,4 +126,4 @@ DESIGN AND IMPLEMENTATION
             the control unit, all input-output circuits in another block
             called the i/o unit, etc.
 
-![8 bir architecture Diagram](https://user-images.githubusercontent.com/73009807/189870670-e3030582-d6a7-4d8a-a518-aebc5d88680a.png)
+        ![8 bir architecture Diagram](https://user-images.githubusercontent.com/73009807/189870670-e3030582-d6a7-4d8a-a518-aebc5d88680a.png)
