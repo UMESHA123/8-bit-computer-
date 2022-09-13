@@ -135,5 +135,5 @@ DESIGN AND IMPLEMENTATION
             (from less than 1Hz to a few hundred Hz). The clock can also be put into a manual
             mode where you push a button to advance each clock cycle. This will be a really
             useful feature for debugging the computer later on.
-/media/umesha/CCCOMA_X64FRE_EN-GB_DV9/New folder/8 bit computer architecture/final report_final.pdf
+
 
