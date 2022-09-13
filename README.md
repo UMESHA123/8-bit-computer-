@@ -192,14 +192,16 @@ Random access memory (RAM) module
             operation is performed. In this way, the instruction or data word stored in the
             RAM is placed on the W bus for use in some other part of the computer.
 
-![Uploading IMG_20220717_162910.jpg…]()
+![IMG_20220717_162910](https://user-images.githubusercontent.com/73009807/189876291-0f5b912f-0143-4ad2-b0f8-21b8c744e694.jpg)
 
 
 Address genereter
 
+![IMG_20220717_162906](https://user-images.githubusercontent.com/73009807/189876322-f88944cd-d01e-4a55-92e4-6f252236374b.jpg)
 
 
 Data genereter
+![Uploading IMG_20220717_162912.jpg…]()
 
 
 
