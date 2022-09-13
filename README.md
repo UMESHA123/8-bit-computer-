@@ -91,3 +91,39 @@ Problem Statement:
       ➢ After getting the output from ALU, now that result is stored in register A.
       ➢ Now from the A register we can take the result and transfer it to output
         port and show the result.
+
+Scope of the project:
+
+                        One of the most important elements in a computer system is the
+            bus structure that supplies the interface for all the hardware components.
+            This bus structure contains the necessary signals to allow the various
+            system components to interact with each other. The bus supports two
+            independent address spaces: memory and I/O. During memory cycles, the
+            bus allows direct addressability of up to 16 megabytes using 24-bit
+            addressing. During I/O bus cycles, the bus allows addressing of up to 64
+            kilobyte I/O ports using l6.bit addressing. Memory and I/O cycles can
+            support 8-bit or 16-bit data transfers.
+
+Limitations:
+
+            ➢ Instruction set is limited to only 16 bytes.
+            ➢ Maximum result is 255(8-bit only).
+            ➢ Program needs to be written every time the power goes off.
+            ➢ Input is through dip switches, which is not very user-friendly.
+            ➢ Power supply is limited to 5 volts.
+            
+            
+DESIGN AND IMPLEMENTATION
+
+3.1 Introduction:
+
+                        Figure 3.1 shows the architecture (structure) of 8-bit computer, a
+            bus-organized computer. All register outputs to the W bus are three-state; this
+            allows orderly transfer of data. All other register outputs are two-state; these
+            outputs continuously drive the boxes they are connected to.
+            The layout of Fig. 3.1 emphasizes the registers used in 8-bit computer. For this
+            reason, no attempt has been made to keep all control circuits in one block called
+            the control unit, all input-output circuits in another block
+            called the i/o unit, etc.
+
+![8 bir architecture Diagram](https://user-images.githubusercontent.com/73009807/189870670-e3030582-d6a7-4d8a-a518-aebc5d88680a.png)
