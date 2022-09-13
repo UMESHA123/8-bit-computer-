@@ -126,4 +126,14 @@ DESIGN AND IMPLEMENTATION
             the control unit, all input-output circuits in another block
             called the i/o unit, etc.
 
-        ![8 bir architecture Diagram](https://user-images.githubusercontent.com/73009807/189870670-e3030582-d6a7-4d8a-a518-aebc5d88680a.png)
+![8 bir architecture Diagram](https://user-images.githubusercontent.com/73009807/189870670-e3030582-d6a7-4d8a-a518-aebc5d88680a.png)
+
+1.Clock:
+
+                          The computer’s clock is used to synchronize all operations. The clock
+            we’re building is based on the popular 555 timer IC. Our clock is adjustable-speed
+            (from less than 1Hz to a few hundred Hz). The clock can also be put into a manual
+            mode where you push a button to advance each clock cycle. This will be a really
+            useful feature for debugging the computer later on.
+/media/umesha/CCCOMA_X64FRE_EN-GB_DV9/New folder/8 bit computer architecture/final report_final.pdf
+
