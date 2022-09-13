@@ -169,7 +169,8 @@ Arithmetic and logic unit:
             subtract. It’s connected to the A and B registers and outputs either the sum of
             A+B or the difference of A-B.
 
-![Uploading IMG_20220717_162937.jpg…]()
+![IMG_20220717_162937](https://user-images.githubusercontent.com/73009807/189876645-f4697798-8c37-472c-87bb-4a7ac14182a2.jpg)
+
 
 Random access memory (RAM) module
 
@@ -201,8 +202,7 @@ Address genereter
 
 
 Data genereter
-![Uploading IMG_20220717_162912.jpg…]()
-
+![IMG_20220717_162912](https://user-images.githubusercontent.com/73009807/189876705-32bac932-89bb-41de-8d6b-a76bb5bce46a.jpg)
 
 
 Program counter
@@ -229,6 +229,8 @@ Program counter
 
 ![Screenshot from 2022-09-13 15-30-55](https://user-images.githubusercontent.com/73009807/189873053-013f1bfe-3186-484c-a070-f88d639cd671.png)
 
+Control Unit
+![IMG_20220717_162944](https://user-images.githubusercontent.com/73009807/189876784-c4c4d198-27d1-4f7c-9679-ba47886a457a.jpg)
 
 Project Setup
 
