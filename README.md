@@ -136,4 +136,97 @@ DESIGN AND IMPLEMENTATION
             mode where you push a button to advance each clock cycle. This will be a really
             useful feature for debugging the computer later on.
 
+![IMG_20220717_162902](https://user-images.githubusercontent.com/73009807/189871822-376c5903-8938-4f04-981c-c991c1366ff5.jpg)
 
+
+Registers
+
+                        Most CPUs have a number of registers which store small amounts
+            of data that the CPU is processing. In our simple breadboard CPU, we’ll build
+            three 8-bit registers: A, B, and IR. The A and B registers are general-purpose
+            registers. IR (the instruction register) works similarly, but we’ll only use it for
+            storing the current instruction that’s being executed. The instruction register is
+            part of the control unit. To fetch an instruction from the memory the computer
+            does a memory read operation. This places the contents of the addressed
+            memory location on the W bus.
+            At the same time, the instruction register is set up for loading on
+            the next positive clock edge. The contents of the instruction register are split
+            into two nibbles. The upper nibble is a two-state output that goes directly to the
+            block labeled Controller-sequencer." The lower nibble is a three-state output
+            that is read onto the W bus when needed.
+
+
+
+
+
+
+
+Arithmetic and logic unit:
+
+            The arithmetic logic unit (ALU) part of a CPU is usually capable of
+            performing various arithmetic, bitwise, and comparison operations on binary
+            numbers. In our simple breadboard CPU, the ALU is just able to add and
+            subtract. It’s connected to the A and B registers and outputs either the sum of
+            A+B or the difference of A-B.
+
+![Uploading IMG_20220717_162937.jpg…]()
+
+Random access memory (RAM) module
+
+                        The random access memory (RAM) stores the program the computer
+            is executing as well as any data the program needs. Our breadboard computer
+            uses 4-bit addresses which means it will only have 16 bytes of RAM, limiting the
+            size and complexity of programs it can run. above the program counter is the
+            input and MAR block.
+            It includes the address and data switch registers show in fig 3.1. These
+            switch registers, which are part of the input unit, allow you to send 4 address bits
+            and 8 data bits to the RAM. As you recall, instruction and data words are written
+            into the RAM before a computer run. The memory address register (MAR) is part
+            of the SAP1 memory. During a computer run, the address in the program counter
+            is latched into the MAR. A bit later, the MAR applies this 4-bit address to the
+            RAM, where a read operation is performed.
+            The RAM is a 16 X 8 static TTL RAM. As discussed in Sec. 9-4, you can
+            program the RAM by means of the address and data switch registers. This allows
+            you to store a program and data in the memory before a computer run. During a
+            computer run, the RAM receives 4-bit addresses from the MAR and a read
+            operation is performed. In this way, the instruction or data word stored in the
+            RAM is placed on the W bus for use in some other part of the computer.
+
+![Uploading IMG_20220717_162910.jpg…]()
+
+
+Address genereter
+
+
+
+Data genereter
+
+
+
+Program counter
+
+                         The program is stored at the beginning of the memory with the first
+            instruction at binary address 0000, the second instruction at address 0001, the
+            third at address 0010, and so on. The program counter, which is part of the control
+            unit, counts from 0000 to 1111. Its job is to send to the memory the address of
+            the next instruction to be fetched and executed. It does this as follows. The
+            program counter is reset to 0000 before each computer run. When the computer
+            run begins, the program counter sends address 0000 to the memory.
+            The program counter is then incremented to get 0001. After the first
+            instruction is fetched and executed, the program counter sends address 0001 to
+            the memory. Again the program counter is incremented. After the second
+            instruction is fetched and executed, the program counter sends address 0010 to
+            the memory. In this way, the program counter is keeping track of the next
+            instruction to be fetched and executed.
+            The program counter is like someone pointing a finger at a list of
+            instructions, saying do this first, do this second, do this third, etc. This is why the
+            program counter is sometimes called a pointer; it points to an address in memory
+            where something important is being stored.
+
+
+
+![Screenshot from 2022-09-13 15-30-55](https://user-images.githubusercontent.com/73009807/189873053-013f1bfe-3186-484c-a070-f88d639cd671.png)
+
+
+
+![Screenshot from 2022-09-13 15-34-13](https://user-images.githubusercontent.com/73009807/189873738-9974997d-efc6-4830-9c4d-ab83a8763f47.png)
