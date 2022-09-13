@@ -30,7 +30,6 @@ List of Tables08
 20.  REFERENCES
 
 LIST OF FIGURES
-
 Figure 3.1 Block diagram of 8-bit computer
 Figure 3.2 Circuit diagram of clock
 Figure 3.3 Circuit diagram of Registers
