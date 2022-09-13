@@ -1,7 +1,9 @@
 # 8-bit-computer-
 
 TABLE OF CONTENTS
+
 Acknowledgement03
+
 Abstract04
 Table of Contents05
 List of Figures07
